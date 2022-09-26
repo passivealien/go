@@ -15,7 +15,7 @@ func main() {
 	// User
 	router.POST("/api/createUser", api.CreateUser)
 	router.POST("/api/updateUser", api.UpdateUser)
-	router.POST("/api/deleteUser", api.DeleteUser)
+	router.DELETE("/api/deleteUser", api.DeleteUser)
 
 	// Lookup
 	router.GET("/api/lookup/:user", api.RetrieveUser)
