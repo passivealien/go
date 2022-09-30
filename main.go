@@ -18,7 +18,7 @@ func main() {
 	router.DELETE("/api/deleteUser", api.DeleteUser)
 
 	// Lookup
-	router.GET("/api/lookup/:user", api.RetrieveUser)
+	router.GET("/api/lookup/:number", api.RetrieveUser)
 
 	router.Run(":80")
 }
