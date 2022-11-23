@@ -53,7 +53,7 @@ func DeleteUser(c *gin.Context) {
 
 	sqlStatement := `
 	DELETE FROM "Users"
-	WHERE "User ID" = $1;`
+	WHERE "UserID" = $1;`
 	_, err = db.Exec(sqlStatement, deleteID)
 	if err != nil {
 		panic(err)

@@ -36,8 +36,8 @@ func RetrieveUser(c *gin.Context) {
 	}
 
 	sqlStatement := `
-    SELECT "User ID","First Name", "Last Name", "Birth Date", "Address", "Job Title", "Email" FROM "Users"
-    WHERE "User ID" = $1;`
+    SELECT "UserID","FirstName", "LastName", "BirthDate", "Address", "JobTitle", "Email" FROM "Users"
+    WHERE "UserID" = $1;`
 	_, err = db.Exec(sqlStatement, intVar)
 	if err != nil {
 		panic(err)
